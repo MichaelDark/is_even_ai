@@ -1,0 +1,15 @@
+name: is_even_ai_openai_dart
+description: Check if a number is even with the power of ✨OpenAI✨
+version: 1.0.0
+repository: https://github.com/MichaelDark/is_even_ai
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  is_even_ai: ^1.0.0
+  openai_dart: ^0.4.5
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.24.0
