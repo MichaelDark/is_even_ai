@@ -1,10 +1,11 @@
 name: is_even_ai_firebase_vertexai
 description: Check if a given number is even with the power of Firebase VertexAI using `package:is_even_ai_firebase_vertexai`
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/MichaelDark/is_even_ai
 
 environment:
   sdk: ^3.5.0
+  flutter: ">=3.24.0"
 
 dependencies:
   is_even_ai: ^1.0.0
