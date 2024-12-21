@@ -3,23 +3,47 @@ import 'package:test/test.dart';
 import '../lib/is_even_ai.dart';
 
 void main() {
-  test(
-    'IsEvenAiNoAi test',
-    () async {
-      final IsEvenAi isEvenAi = IsEvenAiNoAi();
+  group('Global accessor', () {
+    test('should throw if uninitialized', () {
+      expect(() => IsEvenAi.global, throwsA(isA<StateError>()));
+    });
 
-      expect(await isEvenAi.isEven(2), true);
-      expect(await isEvenAi.isEven(3), false);
-      expect(await isEvenAi.isOdd(4), false);
-      expect(await isEvenAi.isOdd(5), true);
-      expect(await isEvenAi.areEqual(6, 6), true);
-      expect(await isEvenAi.areEqual(6, 7), false);
-      expect(await isEvenAi.areNotEqual(6, 7), true);
-      expect(await isEvenAi.areNotEqual(7, 7), false);
-      expect(await isEvenAi.isGreaterThan(8, 7), true);
-      expect(await isEvenAi.isGreaterThan(7, 8), false);
-      expect(await isEvenAi.isLessThan(8, 9), true);
-      expect(await isEvenAi.isLessThan(9, 8), false);
-    },
-  );
+    test('should NOT throw if initialized', () {
+      final instance = MockIsEvenAi();
+      IsEvenAi.global = instance;
+      expect(IsEvenAi.global, equals(instance));
+    });
+  });
+}
+
+class MockIsEvenAi implements IsEvenAi {
+  @override
+  Future<bool> areEqual(num a, num b) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool> areNotEqual(num a, num b) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool> isEven(num value) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool> isGreaterThan(num a, num b) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool> isLessThan(num a, num b) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<bool> isOdd(num value) {
+    throw UnimplementedError();
+  }
 }

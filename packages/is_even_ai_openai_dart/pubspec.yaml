@@ -1,6 +1,6 @@
 name: is_even_ai_openai_dart
-description: Check if a number is even with the power of OpenAI
-version: 1.0.0
+description: Check if a given number is even with the power of OpenAI using `package:openai_dart`
+version: 1.0.1
 repository: https://github.com/MichaelDark/is_even_ai
 
 environment:

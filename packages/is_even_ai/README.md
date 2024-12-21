@@ -50,7 +50,7 @@ void main() async {
 Feel free to make a PR to add more AI platforms.
 
 - [`is_even_ai`](https://pub.dev/packages/is_even_ai)
-  - Base API and non-AI implementation (it is not using AI at all. Consider using AI instead)
+  - Base API
 - [`is_even_ai_openai_dart`](https://pub.dev/packages/is_even_ai_openai_dart)
   - [OpenAI](https://openai.com) 
 

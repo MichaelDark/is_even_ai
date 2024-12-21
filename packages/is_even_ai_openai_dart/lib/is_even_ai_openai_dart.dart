@@ -3,14 +3,20 @@ import 'dart:io';
 import 'package:is_even_ai/is_even_ai.dart';
 import 'package:openai_dart/openai_dart.dart';
 
+/// ✨OpenAI✨ implementation to check if a number is even.
 final class IsEvenAiOpenAiDart implements IsEvenAi {
-  final OpenAIClient client;
-  final ChatCompletionModel model;
+  final OpenAIClient _client;
+  final ChatCompletionModel _model;
 
+  /// Create instance of OpenAI implementation.
+  ///
+  /// Optional:
+  /// - [model], default to gpt-3.5-turbo
   const IsEvenAiOpenAiDart(
-    this.client, {
+    OpenAIClient client, {
     ChatCompletionModel? model,
-  }) : model = model ??
+  })  : _client = client,
+        _model = model ??
             const ChatCompletionModel.model(ChatCompletionModels.gpt35Turbo);
 
   @override
@@ -38,9 +44,9 @@ final class IsEvenAiOpenAiDart implements IsEvenAi {
       _askBinaryChoiceQuestion('Is $a less than $b?');
 
   Future<bool> _askBinaryChoiceQuestion(String prompt) async {
-    final res = await client.createChatCompletion(
+    final res = await _client.createChatCompletion(
       request: CreateChatCompletionRequest(
-        model: model,
+        model: _model,
         messages: [
           ChatCompletionMessage.system(
             content: 'You are an AI assistant '
