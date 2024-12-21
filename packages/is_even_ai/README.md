@@ -62,3 +62,7 @@ Feel free to make a PR to add more AI platforms.
 - `Future<bool> areNotEqual(num a, num b)`
 - `Future<bool> isGreaterThan(num a, num b)`
 - `Future<bool> isLessThan(num a, num b)`
+
+## Support
+
+<a href="https://www.buymeacoffee.com/michaeldark" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
