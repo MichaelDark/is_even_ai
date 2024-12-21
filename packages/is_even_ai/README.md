@@ -53,6 +53,8 @@ Feel free to make a PR to add more AI platforms.
   - Base API
 - [`is_even_ai_openai_dart`](https://pub.dev/packages/is_even_ai_openai_dart)
   - [OpenAI](https://openai.com) 
+- [`is_even_ai_firebase_vertexai`](https://pub.dev/packages/is_even_ai_firebase_vertexai)
+  - [Firebase VertexAI](https://firebase.google.com/products/vertex-ai-in-firebase) 
 
 ## Supported methods
 

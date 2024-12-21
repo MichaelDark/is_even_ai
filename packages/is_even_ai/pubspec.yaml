@@ -1,6 +1,6 @@
 name: is_even_ai
 description: Check if a given number is even with the power of AI of your choice
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/MichaelDark/is_even_ai
 
 environment:
