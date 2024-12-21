@@ -1,6 +1,6 @@
 import 'package:firebase_vertexai/firebase_vertexai.dart';
 import 'package:is_even_ai/is_even_ai.dart';
-import 'package:is_even_ai_firebase_vertexai/is_even_ai_firebase_vertexai_dart.dart';
+import 'package:is_even_ai_firebase_vertexai/is_even_ai_firebase_vertexai.dart';
 
 void main() async {
   IsEvenAi.global = IsEvenAiFirebaseVertexAi(
