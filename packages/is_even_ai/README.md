@@ -4,8 +4,8 @@ Dart implementation of [`is-even-ai`](https://github.com/Calvin-LL/is-even-ai).
 Inspired by the famous [`is-even`](https://www.npmjs.com/package/is-even) npm package and [this tweet](https://twitter.com/erenbali/status/1766602689863950658).
 
 [![is_even_ai](https://img.shields.io/pub/v/is_even_ai?label=is_even_ai)](https://pub.dev/packages/is_even_ai)  
-[![is_even_ai_openai_dart](https://img.shields.io/pub/v/is_even_ai_openai_dart?label=is_even_ai_openai_dart)](https://pub.dev/packages/is_even_ai_openai_dart)
-[![is_even_ai_firebase_vertexai](https://img.shields.io/pub/v/is_even_ai_firebase_vertexai?label=is_even_ai_firebase_vertexai)](https://pub.dev/packages/is_even_ai_firebase_vertexai)
+[![is_even_ai_openai_dart](https://img.shields.io/pub/v/is_even_ai_openai_dart?label=is_even_ai_openai_dart)](https://pub.dev/packages/is_even_ai_openai_dart)  
+[![is_even_ai_firebase_vertexai](https://img.shields.io/pub/v/is_even_ai_firebase_vertexai?label=is_even_ai_firebase_vertexai)](https://pub.dev/packages/is_even_ai_firebase_vertexai)  
 
 
 Check if a number is even using the power of ✨AI✨.
